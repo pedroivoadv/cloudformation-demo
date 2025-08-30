@@ -15,3 +15,15 @@
 ## Deletar pilha
 
     aws cloudformation delete-stack --stack-name MinhaPilha
+
+## Resumo
+
+    Resumindo o fluxo de uma aplicação típica com esses serviços:
+
+    Usuário acessa um endpoint no API Gateway.
+
+    O API Gateway chama uma Lambda para processar a requisição.
+
+    A Lambda pode ler/escrever no DynamoDB ou interagir com o S3.
+
+    Tudo isso foi criado/configurado pelo CloudFormation.
